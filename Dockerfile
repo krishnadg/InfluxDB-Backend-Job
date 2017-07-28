@@ -5,7 +5,7 @@ COPY . /usr/share/dotnet/sdk/influxjob
 WORKDIR /usr/share/dotnet/sdk/influxjob
 RUN dotnet restore 
 RUN dotnet build 
-ENTRYPOINT ["dotnet",  "run",  "--project",  "InfluxClassLib/InfluxDBClassLib.csproj"]
+ENTRYPOINT ["dotnet",  "run",  "--project",  "InfluxDBClassLib/InfluxDBClassLib.csproj"]
 
 
 
