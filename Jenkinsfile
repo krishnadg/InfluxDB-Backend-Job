@@ -27,7 +27,7 @@ podTemplate(
 		stage ('Test Influxdb Job') 
 		{
 			container('dotnet-core') {
-			     sh 'dotnet restore && dotnet test InfluxDBTests/InfluxDBTests.csproj --filter Category!=Integration'
+			     sh 'dotnet restore && dotnet test InfluxDBTests/InfluxDBTests.csproj'
 			}		
 		}
 
