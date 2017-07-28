@@ -26,7 +26,8 @@ namespace InfluxDBClassLib
                 period = "current_storage",
                 unit = "bytes",
                 name = "InfluxDB",
-                dateEvaluated = DateTime.Now
+                dateEvaluated = DateTime.Now,
+                costPerUnit = 0
             };
 
             rootObj = new FinalJsonRoot()
