@@ -1,0 +1,13 @@
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/xunit.runner.utility.netstandard15.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/xunit.runner.reporters.netstandard15.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.deps.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.runtimeconfig.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.runtimeconfig.dev.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.pdb
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/obj/Debug/netcoreapp1.1/InfluxDBTests.AssemblyInfo.cs
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/obj/Debug/netcoreapp1.1/InfluxDBTests.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/obj/Debug/netcoreapp1.1/InfluxDBTests.pdb
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBClassLib.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBClassLib.pdb

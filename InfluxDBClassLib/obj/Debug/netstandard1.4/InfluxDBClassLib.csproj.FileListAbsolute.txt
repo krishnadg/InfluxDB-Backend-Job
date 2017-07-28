@@ -1,0 +1,6 @@
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netstandard1.4/InfluxDBClassLib.deps.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netstandard1.4/InfluxDBClassLib.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netstandard1.4/InfluxDBClassLib.pdb
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/obj/Debug/netstandard1.4/InfluxDBClassLib.AssemblyInfo.cs
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/obj/Debug/netstandard1.4/InfluxDBClassLib.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/obj/Debug/netstandard1.4/InfluxDBClassLib.pdb

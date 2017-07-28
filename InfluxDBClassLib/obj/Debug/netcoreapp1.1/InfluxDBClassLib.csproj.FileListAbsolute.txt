@@ -1,0 +1,8 @@
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.deps.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.runtimeconfig.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.runtimeconfig.dev.json
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.pdb
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/obj/Debug/netcoreapp1.1/InfluxDBClassLib.AssemblyInfo.cs
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/obj/Debug/netcoreapp1.1/InfluxDBClassLib.dll
+/Users/brf4/Desktop/InfluxDBJob/InfluxDBClassLib/obj/Debug/netcoreapp1.1/InfluxDBClassLib.pdb
