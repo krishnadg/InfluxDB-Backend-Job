@@ -25,7 +25,7 @@ namespace InfluxDBClassLib
             {
                 team = data.tags.database,
                 env = data.tags.env,
-                value = Decimal.ToInt64(data.values.ElementAtOrDefault(0).ElementAtOrDefault(1))//This is the location of the storage field
+                value = Decimal.ToInt64(data.values.ElementAtOrDefault(0).ElementAt(1))//This is the location of the storage field
             };
 
             return envTeamData;

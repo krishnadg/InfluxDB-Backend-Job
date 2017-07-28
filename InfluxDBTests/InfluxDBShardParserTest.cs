@@ -49,10 +49,10 @@ namespace InfluxDBTests
 
 
                 bool sameEnv = envData.env == resEnvData.env;
-                Assert.True(sameEnv, "Didn't have same data");
+                Assert.True(sameEnv, "Didn't have same env");
 
                 bool sameStorage = envData.value == resEnvData.value;
-                Assert.True(sameStorage, "Didn't have same storage");
+                Assert.True(sameStorage, "Didn't have same storage- expected storage " + envData.value +" got storage " + resEnvData.value);
 
             }
             
@@ -68,8 +68,10 @@ namespace InfluxDBTests
 
             var listoflist = new List<ICollection<decimal>>();
             var listInList = new List<decimal>();
-
+            decimal time = 0;
             decimal d = Decimal.Parse("3.4444973985e+11", System.Globalization.NumberStyles.Float);
+        
+            listInList.Add(time);
             listInList.Add(d);
             listoflist.Add(listInList);
            
@@ -132,8 +134,9 @@ namespace InfluxDBTests
 
             var listoflist = new List<ICollection<decimal>>();
             var listInList = new List<decimal>();
-
+            decimal time = 0;
             decimal d = Decimal.Parse("8.4444973985e+11", System.Globalization.NumberStyles.Float);
+            listInList.Add(time);
             listInList.Add(d);
             listoflist.Add(listInList);
            
