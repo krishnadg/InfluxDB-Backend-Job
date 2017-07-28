@@ -24,7 +24,7 @@ using Newtonsoft.Json;
         string password = args[2];
 
 
-        InfluxDBClient client = new InfluxDBClient("", "admin", "admin");
+        InfluxDBClient client = new InfluxDBClient(uri, username, password);
 
         InfluxDBJob jobDoer = new InfluxDBJob(client);
         List<EnvTeamDataStorage> dataList = jobDoer.GetDataIntoList();

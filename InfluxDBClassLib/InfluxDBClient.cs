@@ -22,7 +22,6 @@ namespace InfluxDBClassLib
         string password;
 
 
-        //curl -G 'http://localhost:8086/query?pretty=true' --data-urlencode "db=mydb" --data-urlencode "q=SELECT \"value\" FROM \"cpu_load_short\" WHERE \"region\"='us-west'"
         static string REQUEST_QUERY = "/query?pretty=true&db=DataLens&epoch=ns&q=select+sum%28%22foo%22%29+from+%28select+max%28diskBytes%29+as+%22foo%22+from+influxdb_shard+where+time+%3E+now%28%29+-+1m+group+by+app_name%2C+%22database%22%2C+engine%2C+env%2C+env_class%2C+host%2C+id%2C+path%2C+retentionPolicy%2C+url%2C+walPath%29+group+by+%22database%22%2C+%22env%22";
         //static string SQL_QUERY = "select sum(\"foo\") from (select max(diskBytes) as \"foo\" from influxdb_shard where time > now() - 1m group by app_name, \"database\", engine, env, env_class, host, id, path, retentionPolicy, url, walPath) group by \"database\", \"env\"";
         //static string BASIC_QUERY = "SELECT value FROM cpu_load_short WHERE region='us-west'";
@@ -33,7 +32,7 @@ namespace InfluxDBClassLib
         public InfluxDBClient(string _uri, string _username, string _password)
         {
             uri = _uri;
-            uri = "http://metrics-data-admin.monitoring.nonprod.aws.cloud.nordstrom.net:8086";
+            //uri = "http://metrics-data-admin.monitoring.nonprod.aws.cloud.nordstrom.net:8086";
             
             var builder = new UriBuilder(uri);
             builder.Port = -1;
