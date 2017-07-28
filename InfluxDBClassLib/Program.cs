@@ -23,7 +23,6 @@ using Newtonsoft.Json;
 
         string password = args[2];
 
-
         InfluxDBClient client = new InfluxDBClient(uri, username, password);
 
         InfluxDBJob jobDoer = new InfluxDBJob(client);

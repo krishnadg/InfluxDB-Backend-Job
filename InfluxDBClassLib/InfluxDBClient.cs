@@ -41,6 +41,7 @@ namespace InfluxDBClassLib
             username = _username;
             password = _password;
            
+           
 
             clientHandler.ClientCertificateOptions = ClientCertificateOption.Manual;
             //clientHandler.SslProtocols = SslProtocols.Tls12;
@@ -59,9 +60,7 @@ namespace InfluxDBClassLib
 
             var listTeamData = new List<InfluxdbShardTeamData>();
 
-            // var teamData = new InfluxdbShardTeamData();
-            // teamData = JsonConvert.DeserializeObject<InfluxdbShardTeamData>(rawJson);
-
+            
             rootObject = JsonConvert.DeserializeObject<RootObject>(json);
 
             listTeamData = rootObject.results.ElementAtOrDefault(0).series.ToList();
