@@ -46,7 +46,7 @@ namespace InfluxDBClassLib
             clientHandler.ClientCertificateOptions = ClientCertificateOption.Manual;
             //clientHandler.SslProtocols = SslProtocols.Tls12;
             clientHandler.ServerCertificateCustomValidationCallback = delegate {return true;}; //Needs to accomodate the CACERT AT SOME POINT!!! - shouldn't always return true
-            clientHandler.Credentials = new NetworkCredential("admin", "admin");
+            clientHandler.Credentials = new NetworkCredential(username, password);
 
 
             client = new HttpClient(clientHandler);

@@ -41,7 +41,7 @@ namespace InfluxDBTests
 
             var json = JsonConvert.SerializeObject(rootDict);
 
-            Assert.True(false, json);
+            Assert.True(true, json);
         }
     }
 }

@@ -32,3 +32,15 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 
+InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.dll
+InfluxDBClassLib/bin/Debug/netcoreapp1.1/InfluxDBClassLib.pdb
+InfluxDBClassLib/obj/Debug/netcoreapp1.1/CoreCompileInputs.cache
+InfluxDBClassLib/obj/Debug/netcoreapp1.1/InfluxDBClassLib.dll
+InfluxDBClassLib/obj/Debug/netcoreapp1.1/InfluxDBClassLib.pdb
+InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBClassLib.dll
+InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBClassLib.pdb
+InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.dll
+InfluxDBTests/bin/Debug/netcoreapp1.1/InfluxDBTests.pdb
+InfluxDBTests/obj/Debug/netcoreapp1.1/CoreCompileInputs.cache
+InfluxDBTests/obj/Debug/netcoreapp1.1/InfluxDBTests.dll
+InfluxDBTests/obj/Debug/netcoreapp1.1/InfluxDBTests.pdb

@@ -15,7 +15,7 @@ namespace InfluxDBClassLib
     {
 
         //string = each influxdb environment, value = list of teams and their respective database storages in given environment
-        Dictionary<string, EnvData> influxStorage;
+        //Dictionary<string, EnvData> influxStorage;
 
         List<EnvTeamDataStorage> flatInfluxStorage;
 
@@ -25,6 +25,7 @@ namespace InfluxDBClassLib
         {
 
             client = _client;
+            flatInfluxStorage = new List<EnvTeamDataStorage>();
 
         }
 
@@ -41,6 +42,17 @@ namespace InfluxDBClassLib
             }
 
             return flatInfluxStorage;
+        }
+
+
+         public void PrintData()
+        {
+            
+            foreach (EnvTeamDataStorage teamData in flatInfluxStorage)
+            {
+                Console.WriteLine("Team: " + teamData.team + " storage size: " + teamData.value + " env: " + teamData.env);
+
+            }
         }
 
 

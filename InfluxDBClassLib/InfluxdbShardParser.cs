@@ -18,11 +18,14 @@ namespace InfluxDBClassLib
 
         public EnvTeamDataStorage ParseShardDataIntoEnvTeamDataStorage(InfluxdbShardTeamData data)
         {
+            Console.WriteLine("Storage: " + Decimal.ToInt64(data.values.ElementAtOrDefault(0).ElementAtOrDefault(0)));
+            //Console.WriteLine("Storage: " + Decimal.ToInt64(data.values.ElementAtOrDefault(1).ElementAtOrDefault(1)));
+
             var envTeamData  = new EnvTeamDataStorage
             {
                 team = data.tags.database,
                 env = data.tags.env,
-                value = Decimal.ToInt64(data.values.ElementAtOrDefault(0).ElementAtOrDefault(1))
+                value = Decimal.ToInt64(data.values.ElementAtOrDefault(0).ElementAtOrDefault(0))//This is the location of the storage field
             };
 
             return envTeamData;

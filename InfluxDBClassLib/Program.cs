@@ -14,28 +14,25 @@ using Newtonsoft.Json;
         // Args in format []
         static void Main(string[] args) {
 
-        InfluxDBClient client = new InfluxDBClient("", "", "");
 
-        var respString = client.GetJson();
+        Console.WriteLine("Collected Args: " + args.Length);
 
-        Console.WriteLine("Response: " + respString);
-        
-        // string rawJson = "{\"name\": \"influxdb_shard\",\"tags\": {\"database\": \"wse\",\"env\": \"prod-7\"},\"columns\": [\"time\",\"sum\"],\"values\": [[0,1.61270024305e+11]] }";
-        // string rawJson2 = "{ \"results\": [ { \"name\": \"influxdb_shard\",\"tags\": {\"database\": \"wse\",\"env\": \"prod-7\"},\"columns\": [\"time\",\"sum\"],\"values\": [[0,1.61270024305e+11]]  },   \"name\": \"influxdb_shard\",\"tags\": {\"database\": \"wse\",\"env\": \"prod-7\"},\"columns\": [\"time\",\"sum\"],\"values\": [[0,1.61270024305e+11]] } ] }  ";
+        string uri = args[0];
 
-/*
-        var rootObject = new RootObject();
+        string username = args[1];
 
-        var listTeamData = new List<InfluxdbShardTeamData>();
+        string password = args[2];
 
-        // var teamData = new InfluxdbShardTeamData();
-        // teamData = JsonConvert.DeserializeObject<InfluxdbShardTeamData>(rawJson);
 
-        rootObject = JsonConvert.DeserializeObject<RootObject>(respString);
+        InfluxDBClient client = new InfluxDBClient("", "admin", "admin");
 
-        //Console.WriteLine(teamData.ToString());
-        Console.WriteLine(rootObject.results.ToList().ElementAtOrDefault(0).series.ElementAtOrDefault(0).ToString());//
-  */    
+        InfluxDBJob jobDoer = new InfluxDBJob(client);
+        List<EnvTeamDataStorage> dataList = jobDoer.GetDataIntoList();
+
+        jobDoer.PrintData();
+
+        S3Client.AddJsonFileToS3(dataList);
+    
         }
     }
  }

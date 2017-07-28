@@ -1,17 +1,31 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "eb01a425028e1f71f9054691897a8acda3f93805"
+    "signature": "868bd6ac08915a68ff38babdee6883884f19d167"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "influxdbclasslib/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.3.8.2",
           "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "InfluxDBClassLib.dll": {}
+        }
+      },
+      "awssdk.core/3.3.17": {
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "awssdk.s3/3.3.8.2": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.17"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
         }
       },
       "newtonsoft.json/10.0.3": {
@@ -78,6 +92,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "awssdk.core/3.3.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NTE47l/BVjbelMxYKCAMaPM+OsnDY3t5nTFXYHEJeV+EFvSHsFNLCt2pbu4YBKWRhgvYmGCJzykdngkfwgjeog==",
+      "path": "awssdk.core/3.3.17",
+      "hashPath": "awssdk.core.3.3.17.nupkg.sha512"
+    },
+    "awssdk.s3/3.3.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-umNWWae0RFyt6mtt8FBwXYb466V5x78+1lRTGyIiVprXH4lyAmTkePkANinLYkijGKQCt3cKzJNOSdetc/lXTw==",
+      "path": "awssdk.s3/3.3.8.2",
+      "hashPath": "awssdk.s3.3.3.8.2.nupkg.sha512"
     },
     "newtonsoft.json/10.0.3": {
       "type": "package",
